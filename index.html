@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Список дел</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Список дел</h1>
+    <input type="text" id="taskInput" placeholder="Добавить задачу">
+    <button onclick="addTask()">Добавить</button>
+    <ul id="taskList">
+    </ul>
+    <button onclick="filterTasks('all')">Показать все</button>
+    <button onclick="filterTasks('completed')">Показать завершенные</button>
+    <button onclick="filterTasks('active')">Показать активные</button>
+    <button onclick="deleteSelectedTasks()">Удалить выбранные задачи</button>
+    <button onclick="editTask()">Редактировать задачу</button>
+    <input type="datetime-local" id="reminderTime">
+</body>
+<script src="script.js"></script>
+</html>
